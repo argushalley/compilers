@@ -80,15 +80,6 @@ return				{ printf("RETURN\n"); }
 {WHITESPACE}			{ ; }
 %%
 int main(int argc, char **argv) {
-	/*FILE *file_in = fopen(argv[1], "r");
-
-	if (file_in) {
-		printf("Cannot open %s file!\n", argv[1]);
-		return -1;
-	}*/
-
 	yylex();
-
-	//fclose(file_in);
 	return 0;
 }
